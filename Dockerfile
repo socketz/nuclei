@@ -1,5 +1,5 @@
-FROM golang:1.16.7-alpine as build-env
-RUN GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+FROM golang:1.17-alpine as build-env
+RUN go get -v github.com/socketz/nuclei/v2/cmd/nuclei
 
 FROM alpine:latest
 RUN apk add --no-cache bind-tools ca-certificates

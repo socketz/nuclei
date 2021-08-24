@@ -4,11 +4,11 @@ import (
 	"strings"
 
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog"
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/loader/filter"
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/loader/load"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
-	"github.com/projectdiscovery/nuclei/v2/pkg/templates"
+	"github.com/socketz/nuclei/v2/pkg/catalog"
+	"github.com/socketz/nuclei/v2/pkg/catalog/loader/filter"
+	"github.com/socketz/nuclei/v2/pkg/catalog/loader/load"
+	"github.com/socketz/nuclei/v2/pkg/protocols"
+	"github.com/socketz/nuclei/v2/pkg/templates"
 )
 
 // Config contains the configuration options for the loader

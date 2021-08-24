@@ -1,17 +1,17 @@
 package protocols
 
 import (
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators/extractors"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators/matchers"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
-	"github.com/projectdiscovery/nuclei/v2/pkg/progress"
-	"github.com/projectdiscovery/nuclei/v2/pkg/projectfile"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/interactsh"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/headless/engine"
-	"github.com/projectdiscovery/nuclei/v2/pkg/reporting"
-	"github.com/projectdiscovery/nuclei/v2/pkg/types"
+	"github.com/socketz/nuclei/v2/pkg/catalog"
+	"github.com/socketz/nuclei/v2/pkg/operators"
+	"github.com/socketz/nuclei/v2/pkg/operators/extractors"
+	"github.com/socketz/nuclei/v2/pkg/operators/matchers"
+	"github.com/socketz/nuclei/v2/pkg/output"
+	"github.com/socketz/nuclei/v2/pkg/progress"
+	"github.com/socketz/nuclei/v2/pkg/projectfile"
+	"github.com/socketz/nuclei/v2/pkg/protocols/common/interactsh"
+	"github.com/socketz/nuclei/v2/pkg/protocols/headless/engine"
+	"github.com/socketz/nuclei/v2/pkg/reporting"
+	"github.com/socketz/nuclei/v2/pkg/types"
 	"go.uber.org/ratelimit"
 )
 

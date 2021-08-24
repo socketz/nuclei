@@ -2,9 +2,9 @@ package templates
 
 import (
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
-	"github.com/projectdiscovery/nuclei/v2/pkg/workflows"
-	"github.com/projectdiscovery/nuclei/v2/pkg/workflows/compile"
+	"github.com/socketz/nuclei/v2/pkg/protocols"
+	"github.com/socketz/nuclei/v2/pkg/workflows"
+	"github.com/socketz/nuclei/v2/pkg/workflows/compile"
 )
 
 // compileWorkflow compiles the workflow for execution

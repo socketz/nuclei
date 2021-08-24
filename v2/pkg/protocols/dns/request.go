@@ -5,8 +5,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
+	"github.com/socketz/nuclei/v2/pkg/output"
+	"github.com/socketz/nuclei/v2/pkg/protocols"
 )
 
 var _ protocols.Request = &Request{}

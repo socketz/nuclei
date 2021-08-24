@@ -9,8 +9,8 @@ import (
 
 	"github.com/karrick/godirwalk"
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/templates"
-	"github.com/projectdiscovery/nuclei/v2/pkg/types"
+	"github.com/socketz/nuclei/v2/pkg/templates"
+	"github.com/socketz/nuclei/v2/pkg/types"
 	"gopkg.in/yaml.v2"
 )
 

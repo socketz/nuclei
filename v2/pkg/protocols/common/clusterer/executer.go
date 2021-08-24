@@ -2,11 +2,11 @@ package clusterer
 
 import (
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/http"
-	"github.com/projectdiscovery/nuclei/v2/pkg/templates"
+	"github.com/socketz/nuclei/v2/pkg/operators"
+	"github.com/socketz/nuclei/v2/pkg/output"
+	"github.com/socketz/nuclei/v2/pkg/protocols"
+	"github.com/socketz/nuclei/v2/pkg/protocols/http"
+	"github.com/socketz/nuclei/v2/pkg/templates"
 )
 
 // Executer executes a group of requests for a protocol for a clustered

@@ -10,9 +10,9 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/generators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/tostring"
 	"github.com/projectdiscovery/rawhttp"
+	"github.com/socketz/nuclei/v2/pkg/protocols/common/generators"
+	"github.com/socketz/nuclei/v2/pkg/protocols/common/tostring"
 )
 
 // dumpResponseWithRedirectChain dumps a http response with the

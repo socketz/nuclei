@@ -15,10 +15,10 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/projectdiscovery/fastdialer/fastdialer"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/protocolstate"
-	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 	"github.com/projectdiscovery/rawhttp"
 	"github.com/projectdiscovery/retryablehttp-go"
+	"github.com/socketz/nuclei/v2/pkg/protocols/common/protocolstate"
+	"github.com/socketz/nuclei/v2/pkg/types"
 	"golang.org/x/net/proxy"
 	"golang.org/x/net/publicsuffix"
 )

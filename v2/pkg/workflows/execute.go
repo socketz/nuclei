@@ -2,8 +2,8 @@ package workflows
 
 import (
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
 	"github.com/remeh/sizedwaitgroup"
+	"github.com/socketz/nuclei/v2/pkg/output"
 	"go.uber.org/atomic"
 )
 

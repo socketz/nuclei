@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/projectdiscovery/nuclei/v2/internal/testutils"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators/extractors"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators/matchers"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
+	"github.com/socketz/nuclei/v2/internal/testutils"
+	"github.com/socketz/nuclei/v2/pkg/operators"
+	"github.com/socketz/nuclei/v2/pkg/operators/extractors"
+	"github.com/socketz/nuclei/v2/pkg/operators/matchers"
+	"github.com/socketz/nuclei/v2/pkg/output"
 	"github.com/stretchr/testify/require"
 )
 

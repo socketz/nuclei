@@ -2,8 +2,8 @@ package runner
 
 import (
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/templates"
 	"github.com/remeh/sizedwaitgroup"
+	"github.com/socketz/nuclei/v2/pkg/templates"
 	"go.uber.org/atomic"
 )
 

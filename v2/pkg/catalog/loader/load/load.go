@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/loader/filter"
-	"github.com/projectdiscovery/nuclei/v2/pkg/types"
+	"github.com/socketz/nuclei/v2/pkg/catalog/loader/filter"
+	"github.com/socketz/nuclei/v2/pkg/types"
 	"gopkg.in/yaml.v2"
 )
 

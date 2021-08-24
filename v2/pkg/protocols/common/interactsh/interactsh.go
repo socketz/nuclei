@@ -11,10 +11,10 @@ import (
 	"github.com/projectdiscovery/gologger"
 	"github.com/projectdiscovery/interactsh/pkg/client"
 	"github.com/projectdiscovery/interactsh/pkg/server"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/output"
-	"github.com/projectdiscovery/nuclei/v2/pkg/progress"
-	"github.com/projectdiscovery/nuclei/v2/pkg/reporting"
+	"github.com/socketz/nuclei/v2/pkg/operators"
+	"github.com/socketz/nuclei/v2/pkg/output"
+	"github.com/socketz/nuclei/v2/pkg/progress"
+	"github.com/socketz/nuclei/v2/pkg/reporting"
 )
 
 // Client is a wrapped client for interactsh server.

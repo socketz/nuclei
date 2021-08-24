@@ -27,7 +27,7 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/pkg/errors"
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/config"
+	"github.com/socketz/nuclei/v2/pkg/catalog/config"
 
 	"github.com/tj/go-update"
 	"github.com/tj/go-update/progress"
@@ -69,7 +69,7 @@ func (r *Runner) updateTemplates() error {
 		r.templatesConfig = configuration
 	}
 
-	ignoreURL := "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/master/.nuclei-ignore"
+	ignoreURL := "https://raw.githubusercontent.com/socketz/nuclei-templates/master/.nuclei-ignore"
 	if r.templatesConfig == nil {
 		currentConfig := &config.Config{
 			TemplatesDirectory: path.Join(home, "nuclei-templates"),
@@ -491,11 +491,11 @@ func (r *Runner) printUpdateChangelog(results *templateUpdateResults, version st
 
 // fetchLatestVersionsFromGithub fetches latest versions of nuclei repos from github
 func (r *Runner) fetchLatestVersionsFromGithub() {
-	nucleiLatest, err := r.githubFetchLatestTagRepo("projectdiscovery/nuclei")
+	nucleiLatest, err := r.githubFetchLatestTagRepo("socketz/nuclei")
 	if err != nil {
 		gologger.Warning().Msgf("Could not fetch latest nuclei release: %s", err)
 	}
-	templatesLatest, err := r.githubFetchLatestTagRepo("projectdiscovery/nuclei-templates")
+	templatesLatest, err := r.githubFetchLatestTagRepo("socketz/nuclei-templates")
 	if err != nil {
 		gologger.Warning().Msgf("Could not fetch latest nuclei-templates release: %s", err)
 	}

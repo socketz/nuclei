@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/projectdiscovery/nuclei/v2/pkg/operators"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/executer"
-	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/offlinehttp"
-	"github.com/projectdiscovery/nuclei/v2/pkg/workflows/compile"
+	"github.com/socketz/nuclei/v2/pkg/operators"
+	"github.com/socketz/nuclei/v2/pkg/protocols"
+	"github.com/socketz/nuclei/v2/pkg/protocols/common/executer"
+	"github.com/socketz/nuclei/v2/pkg/protocols/offlinehttp"
+	"github.com/socketz/nuclei/v2/pkg/workflows/compile"
 	"gopkg.in/yaml.v2"
 )
 

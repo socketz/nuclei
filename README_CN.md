@@ -4,15 +4,15 @@
 </h1>
 
 [![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)
-[![Go Report Card](https://goreportcard.com/badge/github.com/projectdiscovery/nuclei)](https://goreportcard.com/report/github.com/projectdiscovery/nuclei)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/projectdiscovery/nuclei/issues)
-[![GitHub Release](https://img.shields.io/github/release/projectdiscovery/nuclei)](https://github.com/projectdiscovery/nuclei/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/socketz/nuclei)](https://goreportcard.com/report/github.com/socketz/nuclei)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/socketz/nuclei/issues)
+[![GitHub Release](https://img.shields.io/github/release/socketz/nuclei)](https://github.com/socketz/nuclei/releases)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/pdnuclei.svg?logo=twitter)](https://twitter.com/pdnuclei)
-[![Docker Images](https://img.shields.io/docker/pulls/projectdiscovery/nuclei.svg)](https://hub.docker.com/r/projectdiscovery/nuclei)
+[![Docker Images](https://img.shields.io/docker/pulls/socketz/nuclei.svg)](https://hub.docker.com/r/socketz/nuclei)
 [![Chat on Discord](https://img.shields.io/discord/695645237418131507.svg?logo=discord)](https://discord.gg/KECAGdH)
 
 <p align="center">
-<a href="https://nuclei.projectdiscovery.io/templating-guide/" target="_blank"><img src="static/read-the-docs-button.png" height="42px"/></center></a>  <a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank"><img src="static/download-templates-button.png" height="42px"/></a>
+<a href="https://nuclei.projectdiscovery.io/templating-guide/" target="_blank"><img src="static/read-the-docs-button.png" height="42px"/></center></a>  <a href="https://github.com/socketz/nuclei-templates" target="_blank"><img src="static/download-templates-button.png" height="42px"/></a>
 </p>
 
 
@@ -20,7 +20,7 @@ Nuclei是一个基于模板的、可配置攻击目标的扫描快速工具，�
 
 基于模板的nuclei被用来发送请求给目标，有着实现零误报的优点，并且可以对已知的路径进行有效的扫描。nuclei的主要用于在初期的探测阶段快速地对已知的且易于检测的漏洞或者CVE进行扫描。如果存在WAF的话，nuclei使用[retryablehttp-go库](https://github.com/projectdiscovery/retryablehttp-go)来处理各种错误，并且重新尝试攻击，这也是我们自定义功能的核心模块之一。
 
-我们也维护一个具有各个类型的模板的[开源库](https://github.com/projectdiscovery/nuclei-templates)，我们希望你也能贡献一些模板，贡献的这些模板最好是有效的，并且能允许每个人基于你的模板重新构建。查看[**nuclei.projectdiscovery.io**](https://nuclei.projectdiscovery.io/templating-guide/)这个网站去学习制作模板的入门知识。
+我们也维护一个具有各个类型的模板的[开源库](https://github.com/socketz/nuclei-templates)，我们希望你也能贡献一些模板，贡献的这些模板最好是有效的，并且能允许每个人基于你的模板重新构建。查看[**nuclei.projectdiscovery.io**](https://nuclei.projectdiscovery.io/templating-guide/)这个网站去学习制作模板的入门知识。
 
 ## 目录
 
@@ -49,10 +49,10 @@ Nuclei是一个基于模板的、可配置攻击目标的扫描快速工具，�
 
 ### 二进制文件安装
 
-二进制文件安装很简单，你可以从[Releases](https://github.com/projectdiscovery/nuclei/releases/)页面下载已经构建好的二进制文件压缩包，使用解压工具提取下载的压缩包，并将解压的文件夹移动到$PATH目录，就可以直接使用了。
+二进制文件安装很简单，你可以从[Releases](https://github.com/socketz/nuclei/releases/)页面下载已经构建好的二进制文件压缩包，使用解压工具提取下载的压缩包，并将解压的文件夹移动到$PATH目录，就可以直接使用了。
 
 ```sh
-Download latest binary from https://github.com/projectdiscovery/nuclei/releases
+Download latest binary from https://github.com/socketz/nuclei/releases
 
 ▶ tar -xzvf nuclei-linux-amd64.tar.gz
 ▶ mv nuclei /usr/local/bin/
@@ -64,13 +64,13 @@ Download latest binary from https://github.com/projectdiscovery/nuclei/releases
 nuclei需要**go1.14+**才能成功安装，运行以下命令获取repo
 
 ```sh
-▶ GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+▶ GO111MODULE=on go get -v github.com/socketz/nuclei/v2/cmd/nuclei
 ```
 
 ### GitHub安装
 
 ```sh
-▶ git clone https://github.com/projectdiscovery/nuclei.git; cd nuclei/v2/cmd/nuclei/; go build; mv nuclei /usr/local/bin/; nuclei -version
+▶ git clone https://github.com/socketz/nuclei.git; cd nuclei/v2/cmd/nuclei/; go build; mv nuclei /usr/local/bin/; nuclei -version
 ```
 
 ## Nuclei模板
@@ -165,22 +165,22 @@ https://test.com
 
 ### 在docker中运行
 
-你需要使用[nuclei的docker镜像](https://hub.docker.com/r/projectdiscovery/nuclei)来运行
+你需要使用[nuclei的docker镜像](https://hub.docker.com/r/socketz/nuclei)来运行
 
 ```sh
-▶ docker pull projectdiscovery/nuclei
+▶ docker pull socketz/nuclei
 ```
 
 下载并构建完成后，运行以下命令：
 
 ```sh
-▶ docker run -it projectdiscovery/nuclei
+▶ docker run -it socketz/nuclei
 ```
 
 这将会对`urls.txt`中的URL通过docker中的nuclei进行检测，并将结果输出到本机的`results.txt`文件的：
 
 ```sh
-▶ cat urls.txt | docker run -v /path/to/nuclei-templates:/app/nuclei-templates -v /path/to/nuclei/config:/app/.nuclei-config.json -i projectdiscovery/nuclei -t /app/nuclei-templates/files/git-config.yaml > results.txt
+▶ cat urls.txt | docker run -v /path/to/nuclei-templates:/app/nuclei-templates -v /path/to/nuclei/config:/app/.nuclei-config.json -i socketz/nuclei -t /app/nuclei-templates/files/git-config.yaml > results.txt
 ```
 记住更改的模板路径到本机
 
@@ -196,7 +196,7 @@ Nuclei有多种控制速率的方法，包括并行执行多个模板、并行�
 
 ### 排除模板
 
-[Nuclei模板](https://github.com/projectdiscovery/nuclei-templates)包含多种检查，其中有许多对攻击有用的检查，但并不是都有用的。如果您只希望扫描少数特定的模板或目录，则可以使用如下的参数筛选模板，或将某些模板排除。
+[Nuclei模板](https://github.com/socketz/nuclei-templates)包含多种检查，其中有许多对攻击有用的检查，但并不是都有用的。如果您只希望扫描少数特定的模板或目录，则可以使用如下的参数筛选模板，或将某些模板排除。
 
 #### 排除模板运行
 
@@ -226,13 +226,13 @@ nuclei -l urls.txt -t panels/ -t technologies -severity info
 
 #### 使用`.nuclei-ignore`文件排除模板
 
-自从nuclei的[v2.1.1版本](https://github.com/projectdiscovery/nuclei/releases/tag/v2.1.1)以来，我们添加了对`.nuclei-ignore`文件的支持，该文件与`update-templates`参数一起使用，在 **.nuclei-ignore** 文件中，您可以定义要从nuclei扫描中排除的所有模板目录或者模板路径，要开始使用此功能，请确保使用`nuclei-update-templates`参数安装nuclei模板，现在可以根据`.nuclei-ignore`的文件来添加、更新、删除模板文件。
+自从nuclei的[v2.1.1版本](https://github.com/socketz/nuclei/releases/tag/v2.1.1)以来，我们添加了对`.nuclei-ignore`文件的支持，该文件与`update-templates`参数一起使用，在 **.nuclei-ignore** 文件中，您可以定义要从nuclei扫描中排除的所有模板目录或者模板路径，要开始使用此功能，请确保使用`nuclei-update-templates`参数安装nuclei模板，现在可以根据`.nuclei-ignore`的文件来添加、更新、删除模板文件。
 
 ```
 nano ~/nuclei-templates/.nuclei-ignore
 ```
 
-默认的**nuclei忽略**列表可以访问[这里]((https://github.com/projectdiscovery/nuclei-templates/blob/master/.nuclei-ignore)，如果不想排除任何内容，只需要删除`.nuclei-ignore`文件。
+默认的**nuclei忽略**列表可以访问[这里]((https://github.com/socketz/nuclei-templates/blob/master/.nuclei-ignore)，如果不想排除任何内容，只需要删除`.nuclei-ignore`文件。
 
 * * *
 
@@ -250,4 +250,4 @@ nano ~/nuclei-templates/.nuclei-ignore
 
 --------
 
-Nuclei是由[projectdiscovery](https://projectdiscovery.io)团队用🖤制作的，当然社区也贡献了很多，通过 **[Thanks.md](https://github.com/projectdiscovery/nuclei/blob/master/THANKS.md)**文件以获取更多详细信息。
+Nuclei是由[projectdiscovery](https://projectdiscovery.io)团队用🖤制作的，当然社区也贡献了很多，通过 **[Thanks.md](https://github.com/socketz/nuclei/blob/master/THANKS.md)**文件以获取更多详细信息。

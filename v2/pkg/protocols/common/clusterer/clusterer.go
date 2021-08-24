@@ -1,7 +1,7 @@
 package clusterer
 
 import (
-	"github.com/projectdiscovery/nuclei/v2/pkg/templates"
+	"github.com/socketz/nuclei/v2/pkg/templates"
 )
 
 // Cluster clusters a list of templates into a lesser number if possible based

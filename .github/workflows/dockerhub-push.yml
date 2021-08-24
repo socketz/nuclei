@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm
           push: true
-          tags: projectdiscovery/nuclei:latest
+          tags: socketz/nuclei:latest

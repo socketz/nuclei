@@ -7,7 +7,7 @@ import (
 
 	"github.com/antchfx/htmlquery"
 
-	"github.com/projectdiscovery/nuclei/v2/pkg/types"
+	"github.com/socketz/nuclei/v2/pkg/types"
 )
 
 // ExtractRegex extracts text from a corpus and returns it

@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/projectdiscovery/nuclei/v2/internal/testutils"
+	"github.com/socketz/nuclei/v2/internal/testutils"
 	"github.com/stretchr/testify/require"
 )
 
@@ -94,7 +94,7 @@ func TestMakeRequestFromRawWithPayloads(t *testing.T) {
 		AttackType: "clusterbomb",
 		Raw: []string{`GET /manager/html HTTP/1.1
 Host: {{Hostname}}
-User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
+User-Agent: Nuclei - Open-source project (github.com/socketz/nuclei)
 Connection: close
 Authorization: Basic {{username + ':' + password}}
 Accept-Encoding: gzip`},
@@ -133,7 +133,7 @@ func TestMakeRequestFromRawPayloadExpressions(t *testing.T) {
 		AttackType: "clusterbomb",
 		Raw: []string{`GET /manager/html HTTP/1.1
 Host: {{Hostname}}
-User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
+User-Agent: Nuclei - Open-source project (github.com/socketz/nuclei)
 Connection: close
 Authorization: Basic {{base64(username + ':' + password)}}
 Accept-Encoding: gzip`},
