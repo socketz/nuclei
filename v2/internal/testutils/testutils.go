@@ -2,14 +2,17 @@ package testutils
 
 import (
 	"github.com/logrusorgru/aurora"
+	"go.uber.org/ratelimit"
+
 	"github.com/projectdiscovery/gologger/levels"
 	"github.com/projectdiscovery/nuclei/v2/pkg/catalog"
+	"github.com/projectdiscovery/nuclei/v2/pkg/model"
+	"github.com/projectdiscovery/nuclei/v2/pkg/model/types/severity"
 	"github.com/projectdiscovery/nuclei/v2/pkg/output"
 	"github.com/projectdiscovery/nuclei/v2/pkg/progress"
 	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
 	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/protocolinit"
 	"github.com/projectdiscovery/nuclei/v2/pkg/types"
-	"go.uber.org/ratelimit"
 )
 
 // Init initializes the protocols and their configurations
@@ -44,7 +47,7 @@ var DefaultOptions = &types.Options{
 	Retries:            1,
 	RateLimit:          150,
 	ProjectPath:        "",
-	Severity:           []string{},
+	Severities:         severity.Severities{},
 	Targets:            []string{},
 	TargetsFilePath:    "",
 	Output:             "",
@@ -95,7 +98,7 @@ func (m *MockOutputWriter) Request(templateID, url, requestType string, err erro
 // TemplateInfo contains info for a mock executed template.
 type TemplateInfo struct {
 	ID   string
-	Info map[string]interface{}
+	Info model.Info
 	Path string
 }
 
