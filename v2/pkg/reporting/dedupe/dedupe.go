@@ -10,8 +10,8 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/socketz/nuclei/v2/pkg/output"
-	"github.com/socketz/nuclei/v2/pkg/types"
+	"github.com/projectdiscovery/nuclei/v2/pkg/output"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 )

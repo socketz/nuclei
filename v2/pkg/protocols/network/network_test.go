@@ -3,7 +3,7 @@ package network
 import (
 	"testing"
 
-	"github.com/socketz/nuclei/v2/internal/testutils"
+	"github.com/projectdiscovery/nuclei/v2/internal/testutils"
 	"github.com/stretchr/testify/require"
 )
 

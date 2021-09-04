@@ -3,12 +3,12 @@ package testutils
 import (
 	"github.com/logrusorgru/aurora"
 	"github.com/projectdiscovery/gologger/levels"
-	"github.com/socketz/nuclei/v2/pkg/catalog"
-	"github.com/socketz/nuclei/v2/pkg/output"
-	"github.com/socketz/nuclei/v2/pkg/progress"
-	"github.com/socketz/nuclei/v2/pkg/protocols"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/protocolinit"
-	"github.com/socketz/nuclei/v2/pkg/types"
+	"github.com/projectdiscovery/nuclei/v2/pkg/catalog"
+	"github.com/projectdiscovery/nuclei/v2/pkg/output"
+	"github.com/projectdiscovery/nuclei/v2/pkg/progress"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/protocolinit"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 	"go.uber.org/ratelimit"
 )
 

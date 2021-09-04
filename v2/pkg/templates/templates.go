@@ -1,13 +1,13 @@
 package templates
 
 import (
-	"github.com/socketz/nuclei/v2/pkg/protocols"
-	"github.com/socketz/nuclei/v2/pkg/protocols/dns"
-	"github.com/socketz/nuclei/v2/pkg/protocols/file"
-	"github.com/socketz/nuclei/v2/pkg/protocols/headless"
-	"github.com/socketz/nuclei/v2/pkg/protocols/http"
-	"github.com/socketz/nuclei/v2/pkg/protocols/network"
-	"github.com/socketz/nuclei/v2/pkg/workflows"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/dns"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/file"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/headless"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/http"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/network"
+	"github.com/projectdiscovery/nuclei/v2/pkg/workflows"
 )
 
 // Template is a request template parsed from a yaml file

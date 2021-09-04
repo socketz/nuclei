@@ -11,9 +11,9 @@ import (
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/launcher"
 	"github.com/pkg/errors"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 	"github.com/projectdiscovery/stringsutil"
 	ps "github.com/shirou/gopsutil/v3/process"
-	"github.com/socketz/nuclei/v2/pkg/types"
 )
 
 // Browser is a browser structure for nuclei headless module

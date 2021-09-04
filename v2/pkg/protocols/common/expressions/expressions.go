@@ -4,9 +4,9 @@ import (
 	"regexp"
 
 	"github.com/Knetic/govaluate"
-	"github.com/socketz/nuclei/v2/pkg/operators/common/dsl"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/generators"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/replacer"
+	"github.com/projectdiscovery/nuclei/v2/pkg/operators/common/dsl"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/generators"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/replacer"
 )
 
 var templateExpressionRegex = regexp.MustCompile(`(?m)\{\{[^}]+\}\}["'\)\}]*`)

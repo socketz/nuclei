@@ -7,12 +7,12 @@
 
 
 <p align="center">
-<a href="https://goreportcard.com/report/github.com/socketz/nuclei"><img src="https://goreportcard.com/badge/github.com/socketz/nuclei"></a>
-<a href="https://github.com/socketz/nuclei/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
-<a href="https://github.com/socketz/nuclei/releases"><img src="https://img.shields.io/github/release/socketz/nuclei"></a>
+<a href="https://goreportcard.com/report/github.com/projectdiscovery/nuclei"><img src="https://goreportcard.com/badge/github.com/projectdiscovery/nuclei"></a>
+<a href="https://github.com/projectdiscovery/nuclei/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
+<a href="https://github.com/projectdiscovery/nuclei/releases"><img src="https://img.shields.io/github/release/projectdiscovery/nuclei"></a>
 <a href="https://twitter.com/pdnuclei"><img src="https://img.shields.io/twitter/follow/pdnuclei.svg?logo=twitter"></a>
 <a href="https://discord.gg/projectdiscovery"><img src="https://img.shields.io/discord/695645237418131507.svg?logo=discord"></a>
-<a href="https://github.com/socketz/nuclei/actions/workflows/build-test.yml"><img src="https://github.com/socketz/nuclei/actions/workflows/build-test.yml/badge.svg?branch=master"></a>
+<a href="https://github.com/projectdiscovery/nuclei/actions/workflows/build-test.yml"><img src="https://github.com/projectdiscovery/nuclei/actions/workflows/build-test.yml/badge.svg?branch=master"></a>
 </p>
       
 <p align="center">
@@ -30,7 +30,7 @@
 
 Nuclei is used to send requests across targets based on a template leading to zero false positives and providing fast scanning on large number of hosts. Nuclei offers scanning for a variety of protocols including TCP, DNS, HTTP, File, etc. With powerful and flexible templating, all kinds of security checks can be modelled with Nuclei.
 
-We have a [dedicated repository](https://github.com/socketz/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 100** security researchers and engineers. It is preloaded with ready to use templates using `-update-templates` flag.
+We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 100** security researchers and engineers. It is preloaded with ready to use templates using `-update-templates` flag.
 
 
 
@@ -45,7 +45,7 @@ We have a [dedicated repository](https://github.com/socketz/nuclei-templates) th
 # Install Nuclei
 
 ```sh
-GO111MODULE=on go get -v github.com/socketz/nuclei/v2/cmd/nuclei
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ```
 
 **More installation [methods can be found here](https://nuclei.projectdiscovery.io/nuclei/get-started/).**
@@ -56,7 +56,7 @@ GO111MODULE=on go get -v github.com/socketz/nuclei/v2/cmd/nuclei
 
 ### Nuclei Templates
 
-Nuclei has had built-in support for automatic update/download templates since version [v2.4.0](https://github.com/socketz/nuclei/releases/tag/v2.4.0). [**Nuclei-Templates**](https://github.com/socketz/nuclei-templates) project provides a community-contributed list of ready-to-use templates that is constantly updated.
+Nuclei has had built-in support for automatic update/download templates since version [v2.4.0](https://github.com/projectdiscovery/nuclei/releases/tag/v2.4.0). [**Nuclei-Templates**](https://github.com/projectdiscovery/nuclei-templates) project provides a community-contributed list of ready-to-use templates that is constantly updated.
 
 You may still use the `update-templates` flag to update the nuclei templates at any time; automatic updates happen every 24 hours. You can write your own checks for your individual workflow and needs following Nuclei's [templating guide](https://nuclei.projectdiscovery.io/templating-guide/).
 
@@ -176,13 +176,13 @@ STATISTICS:
 
 ### Running Nuclei
 
-Scanning target domain with [community-curated](https://github.com/socketz/nuclei-templates) nuclei templates.
+Scanning target domain with [community-curated](https://github.com/projectdiscovery/nuclei-templates) nuclei templates.
 
 ```sh
 nuclei -u https://example.com
 ```
 
-Scanning target URLs with [community-curated](https://github.com/socketz/nuclei-templates) nuclei templates.
+Scanning target URLs with [community-curated](https://github.com/projectdiscovery/nuclei-templates) nuclei templates.
 
 ```sh
 nuclei -list urls.txt
@@ -255,14 +255,14 @@ Nuclei is built with simplicity in mind, with the community backed templates by 
 - **CI/CD:** Engineers are already utilising Nuclei within their CI/CD pipeline, it allows them to constantly monitor their staging and production environments with customised templates.
 - **Continuous Regression Cycle:** With Nuclei, you can create your custom template on every new identified vulnerability and put into Nuclei engine to eliminate in the continuous regression cycle.
 
-We have [a discussion thread around this](https://github.com/socketz/nuclei-templates/discussions/693), there are already some bug bounty programs giving incentives to hackers on writing nuclei templates with every submission, that helps them to eliminate the vulnerability across all their assets, as well as to eliminate future risk in reappearing on productions. If you're interested in implementing it in your organisation, feel free to [reach out to us](mailto:contact@projectdiscovery.io). We will be more than happy to help you in the getting started process, or you can also post into the [discussion thread for any help](https://github.com/socketz/nuclei-templates/discussions/693).
+We have [a discussion thread around this](https://github.com/projectdiscovery/nuclei-templates/discussions/693), there are already some bug bounty programs giving incentives to hackers on writing nuclei templates with every submission, that helps them to eliminate the vulnerability across all their assets, as well as to eliminate future risk in reappearing on productions. If you're interested in implementing it in your organisation, feel free to [reach out to us](mailto:contact@projectdiscovery.io). We will be more than happy to help you in the getting started process, or you can also post into the [discussion thread for any help](https://github.com/projectdiscovery/nuclei-templates/discussions/693).
 
 <h3 align="center">
   <img src="static/regression-with-nuclei.jpg" alt="regression-cycle-with-nuclei" width="1100px"></a>
 </h3>
 
 <h1 align="left">
-  <a href="https://github.com/socketz/nuclei-action"><img src="static/learn-more-button.png" width="170px" alt="Learn More"></a>
+  <a href="https://github.com/projectdiscovery/nuclei-action"><img src="static/learn-more-button.png" width="170px" alt="Learn More"></a>
 </h1>
 
 ### Resources
@@ -277,13 +277,13 @@ We have [a discussion thread around this](https://github.com/socketz/nuclei-temp
 
 ### Credits
 
-Thanks to all the amazing community [contributors for sending PRs](https://github.com/socketz/nuclei/graphs/contributors). Do also check out the below similar open-source projects that may fit in your workflow:
+Thanks to all the amazing community [contributors for sending PRs](https://github.com/projectdiscovery/nuclei/graphs/contributors). Do also check out the below similar open-source projects that may fit in your workflow:
 
 [FFuF](https://github.com/ffuf/ffuf), [Qsfuzz](https://github.com/ameenmaali/qsfuzz), [Inception](https://github.com/proabiral/inception), [Snallygaster](https://github.com/hannob/snallygaster), [Gofingerprint](https://github.com/Static-Flow/gofingerprint), [Sn1per](https://github.com/1N3/Sn1per/tree/master/templates), [Google tsunami](https://github.com/google/tsunami-security-scanner), [Jaeles](https://github.com/jaeles-project/jaeles), [ChopChop](https://github.com/michelin/ChopChop)
 
 ### License
 
-Nuclei is distributed under [MIT License](https://github.com/socketz/nuclei/blob/master/LICENSE.md)
+Nuclei is distributed under [MIT License](https://github.com/projectdiscovery/nuclei/blob/master/LICENSE.md)
 
 <h1 align="left">
   <a href="https://discord.gg/projectdiscovery"><img src="static/Join-Discord.png" width="380" alt="Join Discord"></a> <a href="https://nuclei.projectdiscovery.io"><img src="static/check-nuclei-documentation.png" width="380" alt="Check Nuclei Documentation"></a>

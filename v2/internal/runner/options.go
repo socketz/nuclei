@@ -10,9 +10,9 @@ import (
 	"github.com/projectdiscovery/gologger"
 	"github.com/projectdiscovery/gologger/formatter"
 	"github.com/projectdiscovery/gologger/levels"
-	"github.com/socketz/nuclei/v2/pkg/catalog/config"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/protocolinit"
-	"github.com/socketz/nuclei/v2/pkg/types"
+	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/config"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/protocolinit"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 )
 
 // ParseOptions parses the command line flags provided by a user

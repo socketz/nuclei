@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/protocolstate"
-	"github.com/socketz/nuclei/v2/pkg/types"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/protocolstate"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 	"github.com/stretchr/testify/require"
 )
 

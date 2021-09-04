@@ -11,11 +11,11 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/projectdiscovery/gologger"
-	"github.com/socketz/nuclei/v2/pkg/output"
-	"github.com/socketz/nuclei/v2/pkg/protocols"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/expressions"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/interactsh"
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/replacer"
+	"github.com/projectdiscovery/nuclei/v2/pkg/output"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/expressions"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/interactsh"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/replacer"
 )
 
 var _ protocols.Request = &Request{}

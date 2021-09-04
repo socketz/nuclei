@@ -65,7 +65,7 @@ func ReadConfiguration() (*Config, error) {
 // WriteConfiguration writes the updated nuclei configuration to disk
 func WriteConfiguration(config *Config, checked, checkedIgnore bool) error {
 	if config.IgnoreURL == "" {
-		config.IgnoreURL = "https://raw.githubusercontent.com/socketz/nuclei-templates/master/.nuclei-ignore"
+		config.IgnoreURL = "https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/master/.nuclei-ignore"
 	}
 	if checked {
 		config.LastChecked = time.Now()

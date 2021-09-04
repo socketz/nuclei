@@ -3,7 +3,7 @@ package http
 import (
 	"testing"
 
-	"github.com/socketz/nuclei/v2/pkg/protocols/common/generators"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols/common/generators"
 	"github.com/stretchr/testify/require"
 )
 

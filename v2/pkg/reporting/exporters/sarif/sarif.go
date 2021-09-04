@@ -10,8 +10,8 @@ import (
 
 	"github.com/owenrumney/go-sarif/sarif"
 	"github.com/pkg/errors"
-	"github.com/socketz/nuclei/v2/pkg/output"
-	"github.com/socketz/nuclei/v2/pkg/reporting/format"
+	"github.com/projectdiscovery/nuclei/v2/pkg/output"
+	"github.com/projectdiscovery/nuclei/v2/pkg/reporting/format"
 )
 
 // Exporter is an exporter for nuclei sarif output format.
@@ -43,7 +43,7 @@ func New(options *Options) (*Exporter, error) {
 	}
 	templatePath := path.Join(home, "nuclei-templates")
 
-	run := sarif.NewRun("nuclei", "https://github.com/socketz/nuclei")
+	run := sarif.NewRun("nuclei", "https://github.com/projectdiscovery/nuclei")
 	return &Exporter{options: options, home: templatePath, sarif: report, run: run, mutex: &sync.Mutex{}}, nil
 }
 
@@ -65,9 +65,9 @@ func (i *Exporter) Export(event *output.ResultEvent) error {
 
 	var templateURL string
 	if strings.HasPrefix(event.TemplatePath, i.home) {
-		templateURL = "https://github.com/socketz/nuclei-templates/blob/master" + templatePath
+		templateURL = "https://github.com/projectdiscovery/nuclei-templates/blob/master" + templatePath
 	} else {
-		templateURL = "https://github.com/socketz/nuclei-templates"
+		templateURL = "https://github.com/projectdiscovery/nuclei-templates"
 	}
 
 	var ruleDescription string

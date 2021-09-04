@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/socketz/nuclei/v2/internal/testutils"
+	"github.com/projectdiscovery/nuclei/v2/internal/testutils"
 )
 
 var dnsTestCases = map[string]testutils.TestCase{

@@ -3,7 +3,7 @@ package replacer
 import (
 	"strings"
 
-	"github.com/socketz/nuclei/v2/pkg/types"
+	"github.com/projectdiscovery/nuclei/v2/pkg/types"
 )
 
 // Payload marker constants

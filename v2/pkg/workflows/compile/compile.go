@@ -2,9 +2,9 @@ package compile
 
 import (
 	"github.com/projectdiscovery/gologger"
-	"github.com/socketz/nuclei/v2/pkg/catalog/loader/filter"
-	"github.com/socketz/nuclei/v2/pkg/catalog/loader/load"
-	"github.com/socketz/nuclei/v2/pkg/protocols"
+	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/loader/filter"
+	"github.com/projectdiscovery/nuclei/v2/pkg/catalog/loader/load"
+	"github.com/projectdiscovery/nuclei/v2/pkg/protocols"
 )
 
 // WorkflowLoader is a loader interface required for workflow
